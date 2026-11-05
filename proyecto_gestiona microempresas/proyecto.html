@@ -5,14 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 
-
-
     <title>Document</title>
 
+    <style>
+        .seccion-derecha {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end; /* Alinea los elementos internos a la derecha */
+            text-align: left;      /* Mantiene el texto del formulario ordenado hacia la izquierda */
+            margin-right: 50px;    /* Margen opcional para que no quede completamente pegado al borde */
+        }
+    </style>
 </head>
 <body>
-
+<div>
 <center><h1>-NATHALY NAILS- </h1> </center>
+
+
+
+
 <center>
 <p>
     BIENVENIDOS A NATHALY NAILS <br>
@@ -28,7 +39,7 @@
 • Gel Semi-permanente: Color vibrante y brillo extremo por más de 15 días. <br>
 • Uñas Acrílicas: Extensiones personalizadas en la longitud y forma de tu preferencia (Square, Coffin, Almond, Stiletto) <br>. <br>
 • Soft Gel / Polygel: Sistemas modernos, ligeros y de alta resistencia para lucir uñas naturales. <br>
-• Nail Art Personalizado: Diseños a mano alzada, cristales, efectos (espejo, aurora, ojo de gato) y encapsulados. <br>
+• Nail Art Personalizado: Diseños a mano alzada, cristales, efectos (espejo, aurora, ojo de gato) and encapsulados. <br>
 Pedicura y Spa  <br>
 * Pedicura Estética / Spa: Limpieza, exfoliación, hidratación profunda y esmaltado para lucir unos pies suaves y saludables. <br>
  <br>
@@ -36,7 +47,7 @@ RETIROS Y CUIDADOS  <br>
 * Retiro Seguro: Retiramos tu set anterior cuidando la salud de tu uña natural. <br>
 * Baño de Acrílico o Kapping: Reforzamiento para uñas naturales propensas a quebrarse. <br>
 Mirada Impactante (Cejas y Pestañas) <br>
-* Diseño de Cejas con Henna Semipermanente: Sombreado natural y definición perfecta para resaltar tu rostro. <br>
+* Diseño de Cejas con Henna Semipermanente: Sombreado natural and definición perfecta para resaltar tu rostro. <br>
 * Pestañas 1x1 (Técnica Clásica): Efecto rímel natural, ideal para el día a día. <br>
 * Pestañas Híbridas: La combinación perfecta entre naturalidad y volumen sutil. <br>
 * Volumen Egipcio: Efecto tupido, elegante y con una textura única que profundiza la mirada. <br>
@@ -80,21 +91,35 @@ numero de contacto: 5651733085 <br>
  <img src="ski5.jpeg" alt="Imagen" width="300"> <br>
  <img src="ski6.jpeg" alt="Imagen" width="300"> <br>
  <img src="ski7.jpeg" alt="Imagen" width="300"> <br>
- <img src="ski8.jpeg" alt="Imagen" width="300"> <br>
+ * <img src="ski8.jpeg" alt="Imagen" width="300"> <br>
  <img src="ski9.jpeg" alt="Imagen" width="300"> <br>
  <img src="ski10.jpeg" alt="Imagen" width="300"> <br>    
  <img src="xd.jpeg" alt="Imagen" width="300"> <br>
  
 
-
-
-  
-
-
-
-
 </center>
+<div class="seccion-derecha">
 
+    <h3>Opiniones y sugerencias</h3>
+
+    <!-- Añadido el atributo target para conectar con el iframe -->
+    <form action="procesar_mensaje.php" method="POST" target="marco-respuesta">  <br>
+      <label for="nombre">Nombre:</label> <br>
+      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required> <br>
+
+      <label for="Sugerencia">sugerencia o opinion:</label> <br>
+      <textarea id="Sugerencia" name="sugerencia" rows="4" placeholder="Escribe tu sugerencia aquí..." required></textarea> <br>
+
+      <button type="submit">Enviar mensaje</button> <br>
+    </form>
+
+    <!-- El iframe recibirá la respuesta a la derecha sin romper tu sitio web -->
+    <iframe name="marco-respuesta" id="resultado-envio" width="400px" height="200px" style="border:none; margin-top:10px;"></iframe>
+
+</div>
+
+
+</div>
 
 </body>
 </html>
