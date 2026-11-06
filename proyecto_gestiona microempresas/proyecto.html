@@ -43,6 +43,12 @@
             margin-bottom: 20px;
             border-bottom: 1px dashed #ccc;
         }
+        /* Estilo responsivo opcional para el mapa */
+        .contenedor-mapa iframe {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
     </style>
 </head>
 <body>
@@ -50,12 +56,13 @@
 <center>
     <h1>-NATHALY NAILS- </h1> 
 
-    <!-- MENÚ DE NAVEGACIÓN (ANCLAS) -->
+    <!-- MENÚ DE NAVEGACIÓN ACTUALIZADO CON UBICACIÓN -->
     <div class="menu-navegacion">
         <a href="#presentacion" class="btn-ancla">Presentación</a>
         <a href="#servicios" class="btn-ancla">Servicios</a>
         <a href="#costos" class="btn-ancla">Costos</a>
         <a href="#contacto" class="btn-ancla">Contacto y Horarios</a>
+        <a href="#ubicacion" class="btn-ancla">Ubicación</a>
         <a href="#galeria" class="btn-ancla">Galería</a>
         <a href="#opiniones" class="btn-ancla">Opiniones</a>
         <a href="#agradecimientos" class="btn-ancla">Créditos</a>
@@ -128,7 +135,7 @@
     <i>
     Redes sociales:  <br>
     Número de contacto: 5651733085 <br>
-    <a href="https://www.instagram.com/">nathaly_nails33</a>  <br>
+    <a href="https://instagram.com">nathaly_nails33</a>  <br>
     </i>
     <h4>Colaboradores</h4>
             <ul>
@@ -156,6 +163,14 @@
      <a href="Uñas.html" class="uñas" >UÑAS</a>
 </div>
 
+<!-- NUEVA SECCIÓN: UBICACIÓN CON TU MAPA -->
+<div id="ubicacion" class="seccion-bloque">
+    <h2>NUESTRA UBICACIÓN</h2>
+    <p>Encuéntranos en Arbolito 6-manzana 3, San Vicente Chicoloapan Centro.</p>
+    <div class="contenedor-mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d940.9084190270877!2d-98.91412603039332!3d19.385008163944754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1e1900205844b%3A0xe922cf8a7950dbdf!2sArbolito%206-manzana%203%2C%20San%20Vicente%20Chicoloapan%20de%20Ju%C3%A1rez%20Centro%2C%20Chimalhucan%2C%2056338%20Chimalhuac%C3%A1n%2C%20M%C3%A9x.!5e0!3m2!1ses-419!2smx!4v1793972311981!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+</div>
 
 <!-- SECCIÓN: GALERÍA -->
 <div id="galeria" class="seccion-bloque">
@@ -224,12 +239,3 @@
          web para Nathaly Nails. Gracias por su dedicacion, creatividad y esfuerzo en <br>
          cada detalle, desde rl diseño y la programacion. <br>
          Este proyecto no hubiera sido posible sin el trabajo en equipo, la organizacion <br>
-        en JIRA, el esfuerzo y compromiso al igual que el apoyo en Github. Cada aporte <br> 
-        mos ayudo a crear un espacio bonito, funcional y pensando en las clientas. <br>
-    </p>
-    </center>
-</div>
-
-</div>
-</body>
-</html>
