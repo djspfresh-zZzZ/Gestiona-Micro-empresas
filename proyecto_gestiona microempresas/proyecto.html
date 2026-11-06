@@ -69,6 +69,40 @@
     </div>
 </center>
 
+
+
+
+<!-- Tu elemento de audio con el atributo 'loop' para que se repita -->
+<audio id="musicaFondo" src="03. Main Menu.mp3" loop></audio>
+
+<script>
+    const audio = document.getElementById('musicaFondo');
+    
+    // Configura el volumen moderado (0.3 equivale al 30%)
+    audio.volume = 0.3; 
+
+    // Función para reproducir el audio tras la interacción del usuario
+    function iniciarMusica() {
+        audio.play().then(() => {
+            // Remueve los eventos para que no se reinicie la canción con cada clic
+            document.removeEventListener('click', iniciarMusica);
+            document.removeEventListener('scroll', iniciarMusica);
+            document.removeEventListener('keydown', iniciarMusica);
+        }).catch(error => {
+            console.log("Esperando interacción del usuario para reproducir...");
+        });
+    }
+
+    // Activa la música al hacer clic, scroll o presionar una tecla
+    document.addEventListener('click', iniciarMusica);
+    document.addEventListener('scroll', iniciarMusica);
+    document.addEventListener('keydown', iniciarMusica);
+</script>
+
+
+
+
+
 <center>
 <p>
     BIENVENIDOS A NATHALY NAILS <br>
